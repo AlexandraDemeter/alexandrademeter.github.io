@@ -17,6 +17,6 @@ function on_motion_uab(e)
     document.getElementById("id_acc_x").innerHTML = Math.round(acc.x * 100) / 100;
     document.getElementById("id_acc_y").innerHTML = Math.round(acc.y * 100) / 100;
     
-    document.getElementById("id_beta_acc").innerHTML = Math.round(Math.atan(acc.x / acc.z) / Math.PI * 180 * 100) / 100;
-    document.getElementById("id_gamma_acc").innerHTML = Math.round(Math.atan(acc.y / acc.z) / Math.PI * 180 * 100) / 100;
+    document.getElementById("id_beta_acc").innerHTML = -Math.round(Math.atan(acc.x / acc.z) / Math.PI * 180 * 100) / 100;
+    document.getElementById("id_gamma_acc").innerHTML = -Math.round(Math.atan(acc.y / acc.z) / Math.PI * 180 * 100) / 100;
 }
