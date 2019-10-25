@@ -12,7 +12,7 @@ function on_orientation_uab(e)
 
 function on_motion_uab(e)
 {
-	document.getElementById("id_acc_z").innerHTML = e.accelerationIncludingGravity.z;
-    document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.x;
-    document.getElementById("id_acc_y").innerHTML = e.accelerationIncludingGravity.y;
+	document.getElementById("id_acc_z").innerHTML = Math.round(e.accelerationIncludingGravity.z * 100)/100;
+    document.getElementById("id_acc_x").innerHTML = Math.round(e.accelerationIncludingGravity.x * 100)/100;
+    document.getElementById("id_acc_y").innerHTML = Math.round(e.accelerationIncludingGravity.y * 100)/100;
 }
