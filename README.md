@@ -1,0 +1,2 @@
+# AlexandraDemeter
+aplicatii diverse
