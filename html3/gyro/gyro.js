@@ -11,8 +11,8 @@ function desenare(beta, gamma)
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.beginPath();
     var r = 10;
-    var x = canvas.height/2 + gamma/90 * (canvas.height/2 - r);
-    var y = canvas.width/2 + beta/90 * (canvas.width/2 - r);
+    var x = canvas.width/2 + gamma/90 * (canvas.width/2 - r);
+    var y = canvas.height/2 + beta/90 * (canvas.height/2 - r);
     context.arc(x, y, r, 0, 2 * Math.PI);
     context.stroke();
 }
